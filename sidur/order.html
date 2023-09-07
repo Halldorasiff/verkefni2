@@ -1,0 +1,78 @@
+<!DOCTYPE html.5>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantanir</title>
+</head>
+<body>
+</head>
+<body>
+    <h1>Pantanir</h1>
+    <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
+
+    <h2>Panta borð</h2>
+    <form action="/submit" method="post">
+        <label for="booking-time">Hvenær viltu koma?</label>
+        <input type="datetime-local" id="booking-time">        
+        <br>
+        <br>
+        <label for="guest-count">Hve mörg?</label>
+        <select id="guest-count">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+
+        <label for="comments">Viltu taka eitthvað fram?</label>
+            <textarea id="comments"></textarea>
+
+        <br>
+
+        <h2>Panta mat</h2>
+        Réttur #1
+        <input type="text" name="dish1" placeholder="Titill rétts">
+        <br>
+        <br>
+        <label for="address">Heimilisfang</label>
+        <input type="text" id="address">
+        <br>
+        <br>
+
+        <h2>Þínar upplýsingar</h2>
+        Nafn
+        <input type="text" name="name" placeholder="Nafnið þitt" required>
+        <br>
+        <br>
+        Netfang
+        <input type="email" name="email" placeholder= "netfang@email.com" required>
+        <br>
+        <br>
+        Sími
+        <input type="tel" name="phone" placeholder="123-4567" required>
+        <br>
+        <br>
+
+        <h2>Samþykkja og panta</h2>
+        <label>
+        <input type="checkbox" required> Ég samþykki skilmála Veitingastaðsins
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Panta">
+    </form>
+</body>
+<br>
+<br>
+    <a href="../index.html" > Aftur á forsíðu: <strong>Veitingastaðurinn</strong></a>
+
+</body>
+</html>
